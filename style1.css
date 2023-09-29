@@ -1,0 +1,424 @@
+/* Global */
+
+body {
+    background-color: #A48300;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; */
+
+}
+
+/* Navigation Bar */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    height: 100px;
+    width: 100%;
+
+
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-basis: 200px; */
+
+    z-index: 1;
+
+
+    /* Glassmorphism */
+    background: rgba(23, 23, 23, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(74, 74, 74, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.navbar img {
+    width: 20%;
+    padding-left: 50px;
+    float: left;
+}
+
+.nav-container {
+    /* text-align: center;
+    position: relative;
+    top: -65px;
+    left: 400px; */
+
+    position: static;
+    float: right;
+    padding-top: 40px;
+    padding-right: 50px;
+
+}
+
+.nav-container a {
+    text-decoration: none;
+    color: #fff;
+    margin: 15px 20px;
+    font-size: 1.2em;
+}
+
+.nav-container a:hover {
+    color: #A48300;
+}
+
+#cart {
+    font-size: 30px;
+    position: relative;
+    top: 5px;
+}
+
+/* Heading Section */
+
+.heading-image {
+    margin-top: 0;
+}
+
+.heading-image img {
+    width: 100%;
+}
+
+.heading {
+    position: relative;
+    bottom: 800px;
+    left: 100px;
+    padding-right: 800px;
+}
+
+.heading h2 {
+    font-size: 80px;
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
+}
+
+.empowering {
+    color: #A48300;
+}
+
+.product-view {
+    position: relative;
+    bottom: 850px;
+    left: 100px;
+}
+
+.product-view button {
+    font-size: 20px;
+    color: #A48300;
+    background-color: transparent;
+    border: solid 1px #A48300;
+    border-radius: 50px;
+    width: 250px;
+    padding: 10px;
+}
+
+.product-view button:hover {
+    border: none;
+    background-color: #A48300;
+    color: white;
+}
+
+
+/* Subheading Section */
+
+
+.subheading {
+    background-color: black;
+    padding: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 60px;
+
+    position: relative;
+    bottom: 500px;
+}
+
+.subheading h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 50px;
+    text-align: center;
+    color: #A48300;
+}
+
+.mission {
+    /* display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap; */
+
+    position: relative;
+    bottom: 400px;
+
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 1fr;
+
+    grid-template-areas:
+        'p img'
+    ;
+}
+
+.mission p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    padding-right: 200px;
+    padding-left: 100px;
+    grid-area: p;
+}
+
+.mission img {
+    width: 70%;
+    padding-right: 100px;
+    grid-area: img;
+}
+
+/* About Us Section */
+
+#about {
+    padding: 100px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: black;
+    position: relative;
+    bottom: 300px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+#about p::selection {
+    color: white;
+    background-color: #A48300;
+}
+
+#about h2 {
+    font-size: 60px;
+    font-weight: lighter;
+    color: #A48300;
+}
+
+#about h3 {
+    color: #A48300;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+
+/* Video Section */
+
+.pastry-video {
+    position: relative;
+    bottom: 300px;
+}
+
+/* Products Section */
+
+#products {
+    display: flex;
+    justify-content: center;
+    column-gap: 20rem;
+
+    background-color: rgb(59, 35, 0);
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+
+
+    position: relative;
+    bottom: 350px;
+    padding: 150px;
+}
+
+#products h2 {
+    color: #A48300;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 70px;
+}
+
+.prdt a,
+.prdt li {
+    text-decoration: none;
+    color: #A48300;
+}
+
+.prdt a:hover {
+    color: white;
+
+}
+
+.doughnuts {
+    background-color: black;
+}
+
+.doughnuts img {
+    width: 100%;
+    position: relative;
+    bottom: 350px;
+
+}
+
+/* Location Section */
+
+.location {
+    background-color: rgb(59, 35, 0);
+    position: relative;
+    bottom: 400px;
+    padding: 50px;
+}
+
+.location h2 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    color: #A48300;
+    font-size: 50px;
+
+}
+
+.location iframe {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Footer Section */
+
+footer {
+    position: relative;
+    bottom: 300px;
+
+    padding: 70px;
+    padding-left: 150px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 100px;
+
+    grid-template-areas:
+        'sign-up contact'
+    ;
+
+
+
+    /* Sign-Up Form Section */
+
+
+
+    .sign-up {
+
+        font-size: 30px;
+        text-align: center;
+        grid-area: sign-up;
+
+
+        width: 80%;
+        height: 500px;
+        border-radius: 50px;
+
+        /* Glassmorphism */
+        background: rgba(23, 23, 23, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(74, 74, 74, 0.37);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+
+    }
+
+    .sign-up h3 {
+        font-weight: lighter;
+    }
+
+    .sign-up form {
+        padding-top: 50px;
+    }
+
+    .sign-up input[type=text] {
+        background-color: transparent;
+        border: solid #A48300 1px;
+        width: 200px;
+    }
+
+    .sign-up input[type=email] {
+        background-color: transparent;
+        border: solid #A48300 1px;
+        width: 200px;
+
+    }
+
+    ::placeholder {
+        color: white;
+        font-style: italic;
+    }
+
+    /* Contact Us Section */
+
+    .contact {
+        grid-area: contact;
+
+        font-size: 30px;
+        text-align: center;
+
+
+
+
+        width: 80%;
+        height: 500px;
+        border-radius: 50px;
+
+        /* Glassmorphism */
+        background: rgba(23, 23, 23, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(74, 74, 74, 0.37);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+
+    }
+
+    .contact p {
+        padding: 30px;
+        font-size: 25px;
+        font-weight: lighter;
+    }
+
+    .contact p:hover {
+        color: #A48300;
+    }
+
+    .contact h3 {
+        font-weight: lighter;
+    }
+
+
+    #_submit {
+        font-size: 20px;
+        color: white;
+        background-color: transparent;
+        border: solid 1px #A48300;
+        border-radius: 50px;
+        width: 250px;
+        padding: 10px;
+    }
+
+    #_submit:hover {
+        border: none;
+        background-color: #A48300;
+        color: white;
+    }
+
+
+
+}
+
+
+.copyright {
+    position: relative;
+    top: 100px;
+    background-color: black;
+    padding: 3px;
+    color: #A48300;
+    text-align: center;
+    margin-top: -300px;
+}
